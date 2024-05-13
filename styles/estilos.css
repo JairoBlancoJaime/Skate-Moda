@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.montserrat-simple {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.platypi-normalElegante {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nunito-redondoElegante {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand-redondo {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    header {
+        background-color: black;
+        border-bottom: solid #777777 1px;
+        z-index: 100;
+        position: sticky;
+        top: 0;
+        height: 120px;
+        
+        #LogoHeader {
+            position: absolute;
+            top: 30px;
+            left: 68px;
+
+            img {
+                width: 65px;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        #EnlaceH1 {
+            position: absolute;
+            top: 60px;
+            left: 110px;
+            text-decoration: none;
+            color: white;
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+
+        nav {
+            position: relative;
+            transform:translateY(-50%);
+            top: 50%;
+            margin-right: 220px;
+            text-align: right;
+            font-size: 22px;
+            
+            a:hover {
+		        color: #999;
+		
+		        span {
+                    transform: scale(1) translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding-inline: 12px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        position: relative;
+                        padding: 8px;
+                        transition: .6s;
+
+                        span {
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            border-bottom: 2px solid #999;
+                            border-radius: 15px;
+                            transform: scale(0) translateY(50px);
+                            opacity: 0;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        #Usuario {
+            position: absolute;
+            transform:translateY(-50%);
+            top: 50%;
+            right: 150px;
+
+            img {
+                width: 42px;
+                aspect-ratio: 1/1;
+            }
+
+            img:hover {
+                transition: .5s;
+                filter: drop-shadow(2px 2px 4px white);
+            }
+        }
+
+        #Carrito{
+            position: absolute;
+            transform:translateY(-50%);
+            top: 50%;
+            right: 80px;
+
+            img {
+                width: 42px;
+                aspect-ratio: 1/1;
+            }
+
+            img:hover {
+                transition: .5s;
+                filter: drop-shadow(2px 2px 4px white);
+            }
+        }
+    }
+
+    main {
+
+        #Bienvenida {
+            position: relative;
+            
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            #TextoBienvenida {
+                background-color: rgba(255, 253, 242, 0.35);
+                backdrop-filter: blur(2px);
+                position: absolute;
+                top: 54%;
+                bottom: 0.3%;
+                width: 100%;
+                text-align: center;
+                color: black;
+
+                h2 {
+                    font-size: clamp(20px, 3vw, 70px);
+                    margin-top: 35px;
+                    margin-inline: 31%;
+                }
+
+                p {
+                    margin-top: 1%;
+                    font-size: clamp(12px, 2vw, 32px);
+                }
+            }
+        }
+
+        #Novedades {
+            text-align: center;
+            margin-top: 80px;
+
+            h3 {
+                font-size: clamp(12px, 4vw, 43px);
+            }
+
+            .Productos {
+                display: inline-block;
+                margin-top: 60px;
+                padding: 15px;
+                transition: 0.2s;
+
+                a {
+                    img {
+                        width: 350px;
+                        height: 370px;
+                        border-radius: 10px;
+                        filter: grayscale(100%);
+                        transition: 0.3s;
+                    }
+                    img:hover {
+                        filter: grayscale(0%);
+                        transition: 0.5s;
+                    }
+                }
+
+                p {
+                    font-size: clamp(6px, 2.5vw, 18px);
+                    margin-top: 5px;
+                }
+            }
+
+            .Productos:hover {
+                scale: 1.05;
+                transition: 0.5s;
+            }
+        }
+        
+        hr {
+            width: 80%;
+            margin-block: 80px;
+            margin-inline: 10%;
+            margin-top: 120px;
+        }
+
+        #AcercaDe {
+            text-align: center;
+
+            h3 {
+                font-size: clamp(12px, 4vw, 43px);
+                margin-bottom: 50px;
+            }
+
+            p {
+                font-size: clamp(6px, 2.5vw, 20px);
+                margin-inline: 26%;
+                margin-top: 15px;
+            }
+
+            #Carrusel {
+
+                #slider {
+                    width: 50%;
+                    height: 32vw;
+                    margin: 80px auto;
+                    transform-style: preserve-3d;
+                    perspective: 1400px;
+
+                    label, label img {
+                        display: flex;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        transition:400ms;
+                        transform: ease;
+                    }
+
+                    input {
+                        visibility: hidden;
+                    }
+                }
+                
+                /* Active slide */
+                #s1:checked ~ #slide1,
+                #s2:checked ~ #slide2,
+                #s3:checked ~ #slide3,
+                #s4:checked ~ #slide4,
+                #s5:checked ~ #slide5 {
+                    transform: translate3d(0%, 0, 0px);
+                    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+                }
+                
+                /* Next Slide */
+                #s1:checked ~ #slide2,
+                #s2:checked ~ #slide3,
+                #s3:checked ~ #slide4,
+                #s4:checked ~ #slide5,
+                #s5:checked ~ #slide1 {
+                    transform: translate3d(20%, 0, -100px);
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+                }
+                
+                /* Previous Slide */
+                #s1:checked ~ #slide5,
+                #s2:checked ~ #slide1,
+                #s3:checked ~ #slide2,
+                #s4:checked ~ #slide3,
+                #s5:checked ~ #slide4 {
+                    transform: translate3d(-20%, 0, -100px);
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+                }
+                
+                /* Next to Next Slide */
+                #s1:checked ~ #slide3,
+                #s2:checked ~ #slide4,
+                #s3:checked ~ #slide5,
+                #s4:checked ~ #slide1,
+                #s5:checked ~ #slide2 {
+                    transform: translate3d(40%, 0, -250px);
+                    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+                }
+                
+                /* Previous to Previous Slide */
+                #s1:checked ~ #slide4,
+                #s2:checked ~ #slide5,
+                #s3:checked ~ #slide1,
+                #s4:checked ~ #slide2,
+                #s5:checked ~ #slide3 {
+                    transform: translate3d(40%, 0, -250px);
+                    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+
+        #Contactanos {
+
+            #info {
+                position: relative;
+                
+                /***Texto***/
+                #bloque {
+                    position: absolute;
+                    top: 120px;
+                    left: 250px;
+                    text-align: center;
+                    margin-inline-end: 66%;
+                    
+                    h3 {
+                        font-size: clamp(12px, 4vw, 43px);
+                        margin-bottom: 60px;
+                    }
+                    p{
+                        font-size: clamp(6px, 1.5vw, 20px);
+                        margin-bottom: 35px;
+                    }
+                }
+
+                /***Formulario***/
+                img {
+                    position: absolute;
+                    top: 30px;
+                    right: 250px;
+                }
+            }
+
+
+            /*#Bloque {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                text-align: center;
+
+                #Info {
+                    position: relative;
+
+                    h3 {
+                        font-size: clamp(12px, 4vw, 43px);
+                    }
+
+                    p {
+                        font-size: clamp(6px, 1.5vw, 20px);
+                        margin-top: 20px;
+                    }
+                }
+
+                #Formulario {
+                    img {
+                        position: absolute;
+                        top: 30px;
+                        right: 250px;
+                    }
+                }
+                /*** Implementar formulario *** 
+            }
+            */
+
+            #Mapa {
+
+
+                margin-top: 650px;
+                width: 100%;
+                height: 500px;
+                border: 0;
+
+
+                /*
+                width: 100%;
+                height: 520px;
+                border: 0;
+                */
+            }
+        }
+    }
+
+
+    /*** REVISAR EL FOOTER MUY BIEN***/
+    footer {
+
+        #FooterGridLayout {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+            #Encabezado {
+                grid-column: 1/5;
+                height: 100px;
+                padding-bottom: 10px;
+                position: relative;
+                background-color: aqua;
+
+                #LogoFooter {
+                    position: absolute;
+                    top: 20px;
+                    left: 48px;
+        
+                    img {
+                        width: 65px;
+                        aspect-ratio: 1/1;
+                    }
+                }
+        
+                #EnlaceMarcaFooter {
+                    position: absolute;
+                    top: 48px;
+                    left: 90px;
+                    text-decoration: none;
+                    color: white;
+        
+                    h1 {
+                        font-size: 29px;
+                    }
+                }
+            }
+
+            #Navegador {
+                grid-column: 1/2;
+                text-align: center;
+                background-color: lightgreen;
+
+                h3 {
+                    font-size: 25px;
+                    padding-block: 10px 20px;
+                }
+                ul {
+                    li {
+                        display: block;
+                        padding-block: 15px;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+
+            #RedesSociales {
+                grid-column: 2/3;
+
+                h3 {
+                    text-align: center;
+                    font-size: 25px;
+                    padding-block: 10px 20px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 17px;
+                    
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        filter: grayscale(100%);
+                        transition: 0.3s;
+                    }
+                    img:hover {
+                        filter:grayscale(0%);
+                        transition: 0.5s;
+                    }
+                }
+                
+                #Facebook {
+                    img {
+                        height: 40px;
+                    }
+                }
+
+                #Instagram {
+                    img {
+                        
+                    }
+                }
+
+                #Twitter {
+                    img {
+                        width: 28px;
+                        height: 28px;             
+                        filter:brightness(.4);
+                    }
+                    img:hover {
+                        filter:brightness(1);    
+                    }
+                }
+
+                #WhatsApp {
+                    img {
+
+                    }
+                }
+
+                #Youtube {
+                    img {
+                        width: 40px;
+                        height: 32px;
+                    }
+                }
+            }
+
+            #Cuenta {
+                grid-column: 3/4;
+                text-align: center;
+
+                h3 {
+                    font-size: 25px;
+                    padding-block: 10px 20px;
+                }
+                ul {
+                    li {
+                        display: block;
+                        padding-block: 15px;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+
+            #Suscribete {
+                grid-column: 4/5;
+                text-align: center;
+
+                h3 {
+                    font-size: 25px;
+                    padding-block: 10px 20px;
+                }
+            }
+        }
+
+
+        #Politicas {
+                
+            p {
+
+            }
+            a {
+
+            }
+        }
+    }
+}
+
+
+
