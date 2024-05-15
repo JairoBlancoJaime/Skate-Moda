@@ -1,11 +1,38 @@
-body {
-    main {
-        .Form {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    
+
+    img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    main {
+        position: absolute;
+        top: 0;
+        left: 73%;
+        top: 40%;
+        
+        margin-top: 120px;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        border: solid #AAA 4px;
+        backdrop-filter: blur(15px);
+
+        .Form {
+            
         }
 
         #FormInicioSesion {
-
+            width: 400px;
+            height: 460px;
+            
         }
 
         #FormRegistro {

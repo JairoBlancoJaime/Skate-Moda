@@ -507,7 +507,10 @@ body {
                             filter: grayscale(100%);
                             transition: 0.3s;
                         }
-                        img:hover {
+                    }
+                    
+                    a:hover {
+                        img{
                             filter:grayscale(0%);
                             transition: 0.5s;
                         }
@@ -525,8 +528,10 @@ body {
                             height: 28px;             
                             filter:brightness(.4);
                         }
-                        img:hover {
-                            filter:brightness(1);    
+                    }
+                    #Twitter:hover {
+                        img {
+                            filter:brightness(1);
                         }
                     }
     
@@ -590,7 +595,8 @@ body {
                         color: white;
                         font-size: 15px;
                     }
-                    input[type="button"] {
+
+                    input[type="submit"] {
                         background-color: #999;
                         font-size: 15px;
                         text-align: center;
