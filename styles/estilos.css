@@ -46,13 +46,16 @@ body {
     background-color: black;
     color: white;
 
-    header {
+    #header {
         background-color: black;
         border-bottom: solid #777777 1px;
         z-index: 100;
-        position: sticky;
+        position: fixed;
         top: 0;
+        width: 100%;
         height: 120px;
+        transition: top 0.4s;
+        
         
         #LogoHeader {
             position: absolute;
@@ -411,6 +414,7 @@ body {
 
 
     /*** REVISAR EL FOOTER MUY BIEN***/
+    /*meter los font-size con el clamp*/
     footer {
 
         #FooterGridLayout {
@@ -419,10 +423,9 @@ body {
 
             #Encabezado {
                 grid-column: 1/5;
-                height: 100px;
+                height: 120px;
                 padding-bottom: 10px;
                 position: relative;
-                background-color: aqua;
 
                 #LogoFooter {
                     position: absolute;
@@ -451,16 +454,20 @@ body {
             #Navegador {
                 grid-column: 1/2;
                 text-align: center;
-                background-color: lightgreen;
+                height: 350px;
 
                 h3 {
+                    /* 25 */
+                    /*font-size: clamp(20px, 3vw, 70px)*/
                     font-size: 25px;
                     padding-block: 10px 20px;
                 }
+
                 ul {
                     li {
                         display: block;
                         padding-block: 15px;
+
                         a {
                             color: white;
                             text-decoration: none;
@@ -472,6 +479,7 @@ body {
 
             #RedesSociales {
                 grid-column: 2/3;
+                height: 350px;
 
                 h3 {
                     text-align: center;
@@ -479,56 +487,54 @@ body {
                     padding-block: 10px 20px;
                 }
 
-                a {
-                    color: white;
-                    text-decoration: none;
-                    font-size: 17px;
-                    
-                    img {
-                        width: 35px;
-                        height: 35px;
-                        filter: grayscale(100%);
-                        transition: 0.3s;
-                    }
-                    img:hover {
-                        filter:grayscale(0%);
-                        transition: 0.5s;
-                    }
-                }
-                
-                #Facebook {
-                    img {
-                        height: 40px;
-                    }
-                }
+                #links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-                #Instagram {
-                    img {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        color: white;
+                        text-decoration: none;
+                        font-size: 17px;
                         
+                        img {
+                            width: 35px;
+                            height: 35px;
+                            margin-right: 10px;
+                            filter: grayscale(100%);
+                            transition: 0.3s;
+                        }
+                        img:hover {
+                            filter:grayscale(0%);
+                            transition: 0.5s;
+                        }
                     }
-                }
-
-                #Twitter {
-                    img {
-                        width: 28px;
-                        height: 28px;             
-                        filter:brightness(.4);
+                    
+                    #Facebook {
+                        img {
+                            height: 40px;
+                        }
                     }
-                    img:hover {
-                        filter:brightness(1);    
+    
+                    #Twitter {
+                        img {
+                            width: 28px;
+                            height: 28px;             
+                            filter:brightness(.4);
+                        }
+                        img:hover {
+                            filter:brightness(1);    
+                        }
                     }
-                }
-
-                #WhatsApp {
-                    img {
-
-                    }
-                }
-
-                #Youtube {
-                    img {
-                        width: 40px;
-                        height: 32px;
+    
+                    #Youtube {
+                        img {
+                            width: 40px;
+                            height: 32px;
+                        }
                     }
                 }
             }
@@ -536,15 +542,18 @@ body {
             #Cuenta {
                 grid-column: 3/4;
                 text-align: center;
+                height: 350px;
 
                 h3 {
                     font-size: 25px;
                     padding-block: 10px 20px;
                 }
+
                 ul {
                     li {
                         display: block;
                         padding-block: 15px;
+
                         a {
                             color: white;
                             text-decoration: none;
@@ -557,22 +566,62 @@ body {
             #Suscribete {
                 grid-column: 4/5;
                 text-align: center;
+                height: 350px;
 
                 h3 {
                     font-size: 25px;
-                    padding-block: 10px 20px;
+                    padding-block: 12% 20px;
+                }
+
+                #contenedor-inputs {
+                    display: inline-block;
+                    width: 100%;
+
+                    input {
+                        width: 60%;
+                        padding: 7px;
+                        margin-bottom: 15px;
+                    }
+
+                    input[type="email"] {
+                        background-color: black;
+                        border-color: solid #999;
+                        border-radius: 7px;
+                        color: white;
+                        font-size: 15px;
+                    }
+                    input[type="button"] {
+                        background-color: #999;
+                        font-size: 15px;
+                        text-align: center;
+                    }
                 }
             }
         }
 
+        hr {
+            width: 95%;
+            margin-inline: 2.5%;
+        }
 
         #Politicas {
-                
-            p {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            ul {
+                list-style: none;
 
-            }
-            a {
+                li {
+                    display: inline-block;
+                    margin-left: 30px;
 
+                    a {
+                        color: white;
+                    }
+                }
             }
         }
     }
@@ -580,3 +629,19 @@ body {
 
 
 
+/*
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin-left: 0;
+    }
+}
+*/

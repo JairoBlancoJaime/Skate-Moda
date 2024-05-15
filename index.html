@@ -10,10 +10,10 @@
 
     <body >
 
-        <header>
+        <header id="header">
 
             <a id="LogoHeader" href="index.html"><img src="images/Elementos del Header/Patinete Blanco.png"></a>
-            <a id="EnlaceH1" class="platypi-normalElegante" href="index.html"><h1>Skaten & Moda</h1></a>
+            <a id="EnlaceH1" class="platypi-normalElegante" href="index.html"><h1>Skate & Moda</h1></a>
         
             <nav class="nunito-redondoElegante">
                 <ul>
@@ -21,7 +21,8 @@
                     <li><a href="pages/tienda.html">Tienda<span></span></a></li>
                     <li><a href="pages/eventos.html">Eventos<span></span></a></li>
                     <li><a href="pages/contactos.html">Contactos<span></span></a></li>
-                    <li><a href="pages/preguntasFrecuentes.html">Preguntas frecuentes<span></span></a></li>                </ul>
+                    <li><a href="pages/preguntasFrecuentes.html">Preguntas frecuentes<span></span></a></li>
+                </ul>
             </nav>
 
             <a id="Usuario" href="pages/iniciarSesion.html"><img src="images/Elementos del Header/Usuario.png"></a>
@@ -172,11 +173,28 @@
 
                 <section id="RedesSociales">
                     <h3 class="quicksand-redondo"><u><b>Redes Sociales</b></u></h3>
-                    <a id="Facebook" href="https://www.facebook.com/?locale=es_ES"><img src="images/iconos footer/icono-facebook.png"><p>Facebook</p></a>
-                    <a id="Instagram" href="https://www.instagram.com/"><img src="images/iconos footer/icono-instagram.png"><p>Instagram</p></a>
-                    <a id="Twitter" href="https://twitter.com/?lang=es"><img src="images/iconos footer/icono-twitter.png"><p>Twitter</p></a>
-                    <a id="WhatsApp" href="https://www.whatsapp.com/?lang=es_LA"><img src="images/iconos footer/icono-whatsapp.png"><p>WhatsApp</p></a>
-                    <a id="Youtube" href="https://www.youtube.com/"><img src="images/iconos footer/icono-youtube.png"><p>Youtube</p></a>
+                    <li id="links">
+                        <a id="Facebook" href="https://www.facebook.com/?locale=es_ES">
+                            <img src="images/iconos footer/icono-facebook.png">
+                            <p>Facebook</p>
+                        </a>
+                        <a id="Instagram" href="https://www.instagram.com/">
+                            <img src="images/iconos footer/icono-instagram.png">
+                            <p>Instagram</p>
+                        </a>
+                        <a id="Twitter" href="https://twitter.com/?lang=es">
+                            <img src="images/iconos footer/icono-twitter.png">
+                            <p>Twitter</p>
+                        </a>
+                        <a id="WhatsApp" href="https://www.whatsapp.com/?lang=es_LA">
+                            <img src="images/iconos footer/icono-whatsapp.png">
+                            <p>WhatsApp</p>
+                        </a>
+                        <a id="Youtube" href="https://www.youtube.com/">
+                            <img src="images/iconos footer/icono-youtube.png">
+                            <p>Youtube</p>
+                        </a>
+                    </li>
                 </section>
 
                 <section id="Cuenta">
@@ -192,8 +210,10 @@
 
                 <section id="Suscribete">
                     <h3 class="quicksand-redondo"><u><b>¡Suscríbete!</b></u></h3>
-                    <input type="email" value="Introduzca su email">
-                    <input type="button"  value="Suscribirse">
+                    <div id="contenedor-inputs">
+                        <input type="email" class="nunito-redondoElegante" value="Introduzca su email">
+                        <input type="button" class="nunito-redondoElegante"  value="Suscribirse">
+                    </div>
                 </section>
             </div>
 
@@ -201,11 +221,14 @@
 
             <section id="Politicas">
                 <p class="platypi-normalElegante">Copyright©2024 All rights reverved | Made by Jairo Blanco</p>
-
-                <a href="pages/carga.html" class="platypi-normalElegante">Política de privacidad</a>
-                <a href="pages/carga.html" class="platypi-normalElegante">Términos y condiciones</a>
+                <ul>
+                    <li><a href="pages/carga.html" id="PolPriv" class="platypi-normalElegante">Política de privacidad</a></li>
+                    <li><a href="pages/carga.html" id="TermCond" class="platypi-normalElegante">Términos y condiciones</a></li>
+                </ul>
             </section>
         </footer>
+
+        <script src="js/main.js"></script>
 
     </body>
 </html>
