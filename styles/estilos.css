@@ -473,6 +473,9 @@ body {
                             text-decoration: none;
                             font-size: 17px;
                         }
+                        a:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -510,6 +513,8 @@ body {
                     }
                     
                     a:hover {
+                        text-decoration: underline;
+
                         img{
                             filter:grayscale(0%);
                             transition: 0.5s;
@@ -564,6 +569,10 @@ body {
                             text-decoration: none;
                             font-size: 17px;
                         }
+                        a:hover{
+                            text-decoration: underline;
+                            transition: 5s;
+                        }
                     }
                 }
             }
@@ -586,6 +595,10 @@ body {
                         width: 60%;
                         padding: 7px;
                         margin-bottom: 15px;
+                    }
+                    input:focus {
+                        outline: solid 3px #BBB;
+                        outline-offset: 1px;
                     }
 
                     input[type="email"] {

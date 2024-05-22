@@ -11,7 +11,7 @@
 
     <body >
 
-        <img src="../images/Formularios/fondoSkater.webp">
+        <img id="fondo" src="../images/Formularios/fondoSkater.webp">
 
         <header id="header">
 
@@ -38,8 +38,9 @@
             <form class="Form" id="FormRegistro">
                 <h2 class="platypi-normalElegante">¡Regístrate!</h5>
                     <input class="controls" type="email" name="email" value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}$" required>
-                <input class="buttons" type="submit" name="" value="Registrarse">
+                    <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}$" required>
+                    <!--poner terminos y condiciones-->
+                <input class="buttons" id="enviar" type="submit" name="" value="Registrarse">
                 <p>¿Ya tienes una cuenta? <a href="./iniciarSesion.html">Inicia sesión aquí.</a></p>
             </form>
 

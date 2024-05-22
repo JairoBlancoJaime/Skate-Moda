@@ -57,6 +57,15 @@ body {
                 font-size: 15px;
             }
 
+            input {
+                border-radius: 7px;
+            }
+
+            input:focus {
+                outline: solid 2px #DDD;
+                outline-offset: 1px;
+            }
+
             p {
                 height: 40px;
                 text-align: center;
@@ -104,6 +113,31 @@ body {
                 font-size: 15px;
             }
 
+            input {
+                border-radius: 7px;
+            }
+            input:focus {
+                outline: solid 2px #DDD;
+                outline-offset: 1px;
+            }
+
+            input:focus:valid{
+                background: url(../images/Verificacion/tick.webp) no-repeat 98% center;
+                background-size: 25px;   
+                background-color: #FFF;
+            }
+            input:focus:invalid{
+                background: url(../images/Verificacion/cross.webp) no-repeat 98% center;
+                background-size: 25px;
+                background-color: #FFF;
+            }
+            /*
+                    ARREGLAR AL DAR A ENVIAR, SALE EL TICK
+            input:focus:valid:not(#enviar) {
+                background: url(../images/Verificacion/tick.webp) no-repeat 98% center;
+
+            }
+            */
             p {
                 height: 40px;
                 text-align: center;
