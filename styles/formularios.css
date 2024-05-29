@@ -78,6 +78,7 @@ body {
                 }
                 a:hover {
                     text-decoration: underline;
+                    font-weight: bold;
                 }
             }
         }
@@ -104,6 +105,18 @@ body {
                 font-weight: bold;
             }
 
+            #TerminosCondiciones {
+                width: 10%;
+                border: solid #AAA 1px;
+                margin-bottom: 15px;
+                padding: 11px 10px;
+            }
+
+            #labelTerminosCondiciones {
+                font-size: 15px;
+                font-weight: bold;
+            }
+
             .buttons {
                 width: 100%;
                 height: 40px;
@@ -116,28 +129,24 @@ body {
             input {
                 border-radius: 7px;
             }
-            input:focus {
+            .controls:focus, .buttons:focus {
                 outline: solid 2px #DDD;
                 outline-offset: 1px;
             }
 
-            input:focus:valid{
+            .controls:focus:valid{
                 background: url(../images/Verificacion/tick.webp) no-repeat 98% center;
                 background-size: 25px;   
                 background-color: #FFF;
             }
-            input:focus:invalid{
+            .controls:focus:invalid{
                 background: url(../images/Verificacion/cross.webp) no-repeat 98% center;
                 background-size: 25px;
                 background-color: #FFF;
             }
-            /*
-                    ARREGLAR AL DAR A ENVIAR, SALE EL TICK
-            input:focus:valid:not(#enviar) {
-                background: url(../images/Verificacion/tick.webp) no-repeat 98% center;
 
-            }
-            */
+            
+            
             p {
                 height: 40px;
                 text-align: center;
@@ -149,6 +158,7 @@ body {
                 }
                 a:hover {
                     text-decoration: underline;
+                    font-weight: bold;
                 }
             }
         }
