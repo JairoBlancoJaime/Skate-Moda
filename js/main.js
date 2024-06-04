@@ -19,3 +19,14 @@ window.onscroll = function() {
   //Se actualiza la variable  con la posicion de desplazamiento actual.
   prevScrollPos = currentScrollPos;
 }
+
+/**** Confirmar contraseña ****/
+document.getElementById('FormRegistro').addEventListener('submit', function(event) {
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirmpassword').value;
+
+  if (password !== confirmPassword) {
+    alert('Las contraseñas no coinciden');
+    event.preventDefault();
+  }
+});

@@ -35,15 +35,17 @@
 
         <main class="nunito-redondoElegante">
 
-            <form class="Form" id="FormRegistro">
+            <form class="Form" id="FormRegistro" novalidate>
                 <h2 class="platypi-normalElegante">¡Regístrate!</h5>
+                    <input class="controls" type="text" name="username" value="" placeholder="Nombre" minlength="2" required>
                     <input class="controls" type="email" name="email" value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
+                    <input class="controls" type="password" id="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
+                    <input class="controls" type="password" id="confirmpassword" name="contrasena" value="" placeholder="Repite la contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
+                    <input class="controls" type="tel" name="contrasena" value="" placeholder="Teléfono" pattern="^(?=.*\d)(?!\s)[\d]{9}$" required>
                     <input id="TerminosCondiciones" type="checkbox" required>
                     <label id="labelTerminosCondiciones" for="TerminosCondiciones">Acepto los términos y condiciones de uso</label>
                     <!-- <span class="noValido">La dirección de e-mail no es correcta</span> -->
                     <!-- <span class="valido">La dirección de e-mail es correcta</span> -->
-                    <!--poner terminos y condiciones-->
                 <input class="buttons" id="enviar" type="submit" name="" value="Registrarse">
                 <p>¿Ya tienes una cuenta? <a href="./iniciarSesion.html">Inicia sesión aquí.</a></p>
             </form>
@@ -110,7 +112,7 @@
                 <section id="Suscribete">
                     <h3 class="quicksand-redondo"><u><b>¡Suscríbete!</b></u></h3>
                     <div id="contenedor-inputs">
-                        <input type="email" class="nunito-redondoElegante" value="" placeholder="Introduzca su email">
+                        <input type="email" class="nunito-redondoElegante" name="email" value="" placeholder="Introduzca su email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                         <input type="submit" class="nunito-redondoElegante"  value="Suscribirse">
                     </div>
                 </section>
