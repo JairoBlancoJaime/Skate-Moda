@@ -43,3 +43,37 @@
     top: 0;
     left: 100%;
 }
+
+
+/*.menu, .submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu > li:hover > .submenu,
+.submenu > li:hover > .submenu {
+    display: block;
+}
+
+.submenu > li {
+    position: relative;
+}
+
+.submenu > li:hover {
+    background-color: #ddd;
+}
