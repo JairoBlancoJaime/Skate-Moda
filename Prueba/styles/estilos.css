@@ -1,0 +1,45 @@
+.ULpadre {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.LIpadre {
+    position: relative;
+    display: inline-block;
+}
+
+.ULhijo {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.LIpadre:hover > .ULhijo,
+.LIhijo:hover > .ULhijo {
+    display: block;
+}
+
+.LIhijo {
+    position: relative;
+}
+
+.LIhijo a {
+    display: block;
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+}
+
+.LIhijo a:hover {
+    background-color: #ddd;
+}
+
+.ULhijo .ULhijo {
+    top: 0;
+    left: 100%;
+}
