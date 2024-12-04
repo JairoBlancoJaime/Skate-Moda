@@ -127,76 +127,23 @@ body {
                             transition: .5s;
                         }
                     }
+                }
+
+                .LImenu {
+                    position: relative;
+                    display: inline-block;
                     
-                    /*.menu {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-                    }
-            
-                    .menu > li {
-                        position: relative;
-                        display: inline-block;
-                    }
-            
-                    .menu a {
-                        display: block;
-                        padding: 10px 20px;
-                        text-decoration: none;
-                    }
-            
-                    .submenu a:hover {
-                        background-color: #ddd;
-                    }
-            
-                    .submenu {
+                    .ULsubmenu {
                         display: none;
                         position: absolute;
-                        top: 100%;
-                        left: 0;
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-                        background-color: #888;
-                        border-radius: 6px;
-                    }
-            
-                    .submenu li {
-                        position: relative;
-                    }
-            
-                    .submenu a {
-                        border-radius: 6px;
-                        padding: 10px 20px;
-                    }
-
-                    #Tienda i  {
-                        rotate: 90deg;
-                        padding-left: 0;
-                    }
-
-                    #Tienda:hover i {
-                        rotate: 270deg;
-                        transition: 0.25s ease;
-                    }
-
-                    a i {
-                        padding-left: 4px;
-                    }
-            
-                    .submenu .submenu {
                         top: 0;
                         left: 100%;
-                        text-align: center;
                     }
-            
-                    .menu > li:hover > .submenu {
-                        display: block;
-                    }
-            
-                    .submenu li:hover > .submenu {
-                        display: block;
-                    }*/
+                }
+
+                .LImenu:hover > .ULsubmenu,
+                .LIsubmenu:hover > .ULsubmenu {
+                    display: block;
                 }
             }
         }

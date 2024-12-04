@@ -1,79 +1,16 @@
-.ULpadre {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.LIpadre {
+.LImenu {
     position: relative;
     display: inline-block;
 }
 
-.ULhijo {
+.ULsubmenu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 160px;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.LIpadre:hover > .ULhijo,
-.LIhijo:hover > .ULhijo {
-    display: block;
-}
-
-.LIhijo {
-    position: relative;
-}
-
-.LIhijo a {
-    display: block;
-    padding: 8px;
-    color: #000;
-    text-decoration: none;
-}
-
-.LIhijo a:hover {
-    background-color: #ddd;
-}
-
-.ULhijo .ULhijo {
     top: 0;
     left: 100%;
 }
 
-
-/*.menu, .submenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu > li {
-    position: relative;
-    display: inline-block;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.menu > li:hover > .submenu,
-.submenu > li:hover > .submenu {
+.LImenu:hover > .ULsubmenu,
+.LIsubmenu:hover > .ULsubmenu {
     display: block;
-}
-
-.submenu > li {
-    position: relative;
-}
-
-.submenu > li:hover {
-    background-color: #ddd;
 }
