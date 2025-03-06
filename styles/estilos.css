@@ -148,6 +148,37 @@ body {
             }
         }
 
+         /*
+// Estilo para el contenedor principal 
+.LImenu {
+    position: relative;
+    display: inline-block;
+}
+
+// Oculta los submenús por defecto 
+.ULsubmenu {
+    display: none;
+    position: absolute;
+    top: 100%;  // Hace que el submenú aparezca debajo del padre 
+    left: 0;
+    background: red;  // Opcional para mejor visualización 
+    z-index: 100;
+}
+
+ // Para submenús anidados
+.LIsubmenu .ULsubmenu {
+    top: 0;
+    left: 100%; // Hace que el submenú aparezca a la derecha
+}
+
+// Muestra el submenú cuando se pasa el mouse 
+.LImenu:hover > .ULsubmenu,
+.LIsubmenu:hover > .ULsubmenu {
+    display: block;
+}
+
+        */
+
         #Usuario {
             position: absolute;
             transform:translateY(-50%);
