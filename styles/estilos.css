@@ -134,10 +134,31 @@ body {
                     display: inline-block;
                     
                     .ULsubmenu {
+                        
                         display: none;
                         position: absolute;
-                        top: 0;
-                        left: 100%;
+                        top: 100%;
+                        left: 0;
+                        text-align: center;
+                        background-color: black;
+                        border: #999 solid 1px;
+                        border-radius: 5px;
+
+                        li a {
+                            border-bottom: #999 solid 1px;
+                        }
+
+                        .LIsubmenu { 
+                            position: relative;
+                            padding: 0.5rem;
+                            width: 100%;
+
+                            .ULsubmenu {
+                                position: absolute;
+                                top: 0;
+                                left: 100%;
+                            }
+                        }
                     }
                 }
 
@@ -147,37 +168,6 @@ body {
                 }
             }
         }
-
-         /*
-// Estilo para el contenedor principal 
-.LImenu {
-    position: relative;
-    display: inline-block;
-}
-
-// Oculta los submenús por defecto 
-.ULsubmenu {
-    display: none;
-    position: absolute;
-    top: 100%;  // Hace que el submenú aparezca debajo del padre 
-    left: 0;
-    background: red;  // Opcional para mejor visualización 
-    z-index: 100;
-}
-
- // Para submenús anidados
-.LIsubmenu .ULsubmenu {
-    top: 0;
-    left: 100%; // Hace que el submenú aparezca a la derecha
-}
-
-// Muestra el submenú cuando se pasa el mouse 
-.LImenu:hover > .ULsubmenu,
-.LIsubmenu:hover > .ULsubmenu {
-    display: block;
-}
-
-        */
 
         #Usuario {
             position: absolute;

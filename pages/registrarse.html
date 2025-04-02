@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+carga<!DOCTYPE html>
 <html lang="en">
     
     <head>
@@ -21,15 +21,32 @@
             <nav class="nunito-redondoElegante">
                 <ul>
                     <li><a href="../index.html">Inicio<span></span></a></li>
-                    <li><a href="./tienda.html">Tienda<span></span></a></li>
-                    <li><a href="./eventos.html">Eventos<span></span></a></li>
-                    <li><a href="./contactos.html">Contactos<span></span></a></li>
-                    <li><a href="./preguntasFrecuentes.html">Preguntas frecuentes<span></span></a></li>
+                    <li class="LImenu"><a href="pages/carga.html">Tienda</a>
+                        <ul class="ULsubmenu">
+                            <li class="LIsubmenu"><a href="pages/carga.html">Skates</a>
+                                <ul class="ULsubmenu">
+                                    <li class="LIsubmenu"><a href="pages/carga.html">Premontados</a></li>
+                                    <li class="LIsubmenu"><a href="pages/carga.html">Piezas</a></li>
+                                </ul>
+                            </li>
+                            <li class="LIsubmenu"><a href="pages/carga.html">Moda</a>
+                                <ul class="ULsubmenu">
+                                    <li class="LIsubmenu"><a href="pages/carga.html">Camisetas</a></li>
+                                    <li class="LIsubmenu"><a href="pages/carga.html">Pantalones</a></li>
+                                    <li class="LIsubmenu"><a href="pages/carga.html">Zapatos</a></li>
+                                    <li class="LIsubmenu"><a href="pages/carga.html">Accesorios</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./carga.html">Eventos<span></span></a></li>
+                    <li><a href="./carga.html">Contactos<span></span></a></li>
+                    <li><a href="./carga.html">Preguntas frecuentes<span></span></a></li>
                 </ul>
             </nav>
 
             <a id="Usuario" href="./iniciarSesion.html"><img src="../images/Elementos del Header/Usuario.png"></a>
-            <a id="Carrito" href="./carrito.html"><img src="../images/Elementos del Header/Carrito.png"></a>
+            <a id="Carrito" href="./carga.html"><img src="../images/Elementos del Header/Carrito.png"></a>
 
         </header>
 
@@ -37,11 +54,11 @@
 
             <form class="Form" id="FormRegistro" novalidate>
                 <h2 class="platypi-normalElegante">¡Regístrate!</h5>
-                    <input class="controls" type="text" name="username" value="" placeholder="Nombre" minlength="2" required>
+                    <input class="controls" type="text" name="username" value="" placeholder="Usuario" minlength="2" required>
                     <input class="controls" type="email" name="email" value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     <input class="controls" type="password" id="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
                     <input class="controls" type="password" id="confirmpassword" name="contrasena" value="" placeholder="Repite la contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
-                    <input class="controls" type="tel" name="contrasena" value="" placeholder="Teléfono" pattern="^(?=.*\d)(?!\s)[\d]{9}$" required>
+                    <input class="controls" type="tel" name="contrasena" value="" placeholder="Teléfono" pattern="^(?=.*\d)(?!\s)[\d]{9}$" maxlength="15" required>
                     <input id="TerminosCondiciones" type="checkbox" required>
                     <label id="labelTerminosCondiciones" for="TerminosCondiciones">Acepto los términos y condiciones de uso</label>
                     <!-- <span class="noValido">La dirección de e-mail no es correcta</span> -->
@@ -65,10 +82,10 @@
                     <h3 class="quicksand-redondo"><u><b>Navegador</b></u></h3>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./tienda.html">Tienda</a></li>
-                        <li><a href="./eventos.html">Eventos</a></li>
-                        <li><a href="./contactos.html">Contactos</a></li>
-                        <li><a href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a href="./carga.html">Tienda</a></li>
+                        <li><a href="./carga.html">Eventos</a></li>
+                        <li><a href="./carga.html">Contactos</a></li>
+                        <li><a href="./carga.html">Preguntas frecuentes</a></li>
                     </ul>
                 </section>
 
