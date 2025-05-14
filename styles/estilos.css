@@ -59,11 +59,11 @@ body {
         height: 120px;
         transition: top 0.4s;
         
-        
         #LogoHeader {
             position: absolute;
             top: 30px;
             left: 68px;
+            transition: all 0.5s ease;
 
             img {
                 width: 65px;
@@ -77,6 +77,7 @@ body {
             left: 110px;
             text-decoration: none;
             color: white;
+            transition: all 0.5s ease;
 
             h1 {
                 font-size: 27px;
@@ -739,6 +740,16 @@ body {
 @media (max-width: 1440px) {
     body {
         #header {
+            #LogoHeader {
+                left: 38px;
+                transition: all 0.5s ease;
+            }
+
+            #EnlaceH1 {
+                left: 80px;
+                transition: all 0.5s ease;
+            }
+
             nav {
                 font-size: 19px;
                 ul {
