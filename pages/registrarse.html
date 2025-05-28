@@ -7,6 +7,7 @@ carga<!DOCTYPE html>
         <link rel="website icon" type="png" href="../images/website icon/Patinete Gris.png">
         <link rel="stylesheet" href="../styles/estilos.css">
         <link rel="stylesheet" href="../styles/formularios.css">
+        <script src="../js/main.js"></script>
     </head>
 
     <body >
@@ -52,19 +53,30 @@ carga<!DOCTYPE html>
 
         <main class="nunito-redondoElegante">
 
-            <form class="Form" id="FormRegistro" novalidate>
+            <form class="Form was-validated" id="FormRegistro" novalidate>
+
                 <h2 class="platypi-normalElegante">¡Regístrate!</h5>
+
                     <input class="controls" type="text" name="username" value="" placeholder="Usuario" minlength="2" required>
-                    <input class="controls" type="email" name="email" value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <input class="controls" type="password" id="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
+                    
+                    <input class="controls" type="email" name="email" value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,}$" required>
+                    
+                    <div class="campo-contrasena">
+                        <input class="controls" type="password" id="password" name="contrasena" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
+                        <span class="ayuda-contrasena">La contraseña debe tener 8-30 caracteres, incluyendo una mayúscula, una minúscula, un número y un símbolo.</span>
+                    </div>
+
                     <input class="controls" type="password" id="confirmpassword" name="contrasena" value="" placeholder="Repite la contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,30}$" required>
+                    
                     <input class="controls" type="tel" name="contrasena" value="" placeholder="Teléfono" pattern="^(?=.*\d)(?!\s)[\d]{9}$" maxlength="15" required>
+                    
                     <input id="TerminosCondiciones" type="checkbox" required>
                     <label id="labelTerminosCondiciones" for="TerminosCondiciones">Acepto los términos y condiciones de uso</label>
-                    <!-- <span class="noValido">La dirección de e-mail no es correcta</span> -->
-                    <!-- <span class="valido">La dirección de e-mail es correcta</span> -->
-                <input class="buttons" id="enviar" type="submit" name="" value="Registrarse">
-                <p>¿Ya tienes una cuenta? <a href="./iniciarSesion.html">Inicia sesión aquí.</a></p>
+
+                    <input class="buttons" id="enviar" type="submit" name="" value="Registrarse">
+                
+                    <p>¿Ya tienes una cuenta? <a href="./iniciarSesion.html">Inicia sesión aquí.</a></p>
+                    
             </form>
 
         </main>

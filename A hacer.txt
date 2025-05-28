@@ -1,0 +1,6 @@
+Cambiar en los formularios los margenes para que se vea bien en movil, en tablet y en ordenador.
+
+Preguntar a Abraham sobre en registrarse los apartads 22 24 y 25? (o dejarlo tal y como esta el 22 y 24 al menos)
+
+Terminar de hacer el responsive
+(Los items que tengo de la 2ª Evaluacion son: 1, 2, 3, 4, 5)
