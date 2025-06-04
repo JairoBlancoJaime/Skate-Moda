@@ -1,6 +1,24 @@
-Cambiar en los formularios los margenes para que se vea bien en movil, en tablet y en ordenador.
+2ªEvaluación: Responsive
 
-Preguntar a Abraham sobre en registrarse los apartads 22 24 y 25? (o dejarlo tal y como esta el 22 y 24 al menos)
+    (Apartado 9, se mantiene la pagina centrada)
+    Modificar la sección Contactanos para que esté centrada
 
-Terminar de hacer el responsive
-(Los items que tengo de la 2ª Evaluacion son: 1, 2, 3, 4, 5)
+    (Es parte del responsive aunque sea del iniciar, sesion registrarse)
+    Cambiar los margenes de Iniciar sesión con respecto a Registrarse. (esta bien hecha en registrarse)
+
+    (La versión tablet está completa)
+    Modificar la página añadiendo a la versión móvil:
+        El menú de hamburguesa.
+        En el footer cambiar columnas de 2 a 1.
+        Cambiar en el footer de Skate & Moda a S&M (Mirar como quedaría en el header para movil)
+
+
+
+3ª Evaluación: Iniciar sesión, Registrarse
+
+    (Esto es opcional, decirle a Abraham)
+    En la parte de Registrarse, los apartados 22, 23, 24 y 25 se hacen con javascript (SweeAlert), tiene que checkear que:
+        No hayan campos vacíos.
+        Las contraseñas coincidan.
+        Política privacidad aceptada.
+        Enviar un archivo .JSON a BE
